@@ -1,0 +1,141 @@
+/* Reset para márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, #10ad0a, #130ccbcc); /* Degradado de fondo */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos básicos para el navbar */
+.navbar {
+    background-color: #1bcd18cc; /* Fondo con un color translúcido */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: center;
+    gap: 1rem; /* Espaciado entre enlaces */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto moderno */
+    border-radius: 10px; /* Bordes suaves */
+}
+
+/* Estilo para los enlaces dentro del navbar */
+.nav-link {
+    text-decoration: none; /* Elimina el subrayado */
+    color: white;
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes suaves */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de transición */
+}
+
+/* Hover en los enlaces */
+.nav-link:hover {
+    background-color: #14a74d; /* Color de fondo al pasar el ratón */
+    color: #f9f9f9; /* Color del texto al pasar el ratón */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        align-items: stretch; /* Ocupa todo el ancho */
+    }
+    .nav-link {
+        text-align: center; /* Centra los enlaces */
+        padding: 1rem 0;
+    }
+}
+
+/* Título de la sección */
+h1 {
+    text-align: center;
+    color: #d3d3d3;
+    margin-top: 2rem;
+}
+
+/* Contenedor de botones de juegos */
+.game-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.game-button {
+    display: block;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-button img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.game-button span {
+    display: block;
+    padding: 0.5rem;
+    background-color: #1bcd18cc;
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Hover en los botones de juego */
+.game-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los videos */
+.video-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-container iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #555;
+}
+/* Centrar la imagen y aplicar bordes suaves */
+img {
+    display: block;
+    margin: 20px auto; /* Centra horizontalmente y agrega espacio superior e inferior */
+    border-radius: 15px; /* Bordes suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para darle un efecto elegante */
+    max-width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}

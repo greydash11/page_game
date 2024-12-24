@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        /* Estilo adicional para centrar el texto del pie de página */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Estilo para el video */
+        .video-container {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #007bff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-link">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="games_clasics.html" class="nav-link">Juegos</a>
+            <a href="contactos.html" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="all-games" id="games">
+            <h1>Lista de Juegos</h1>
+            <div class="game-buttons">
+                <!-- Botón para Juego 1 -->
+                <a href="https://www.crazygames.com/game/bloxdhop-io" class="game-button" target="_blank">
+                    <img src="https://images.crazygames.com/games/bloxdhop-io/cover_16x9-1709115453824.png?auto=format,compress&q=75&cs=strip" alt="Minecraft">
+                    <span>Minecraft</span>
+                </a>
+                <!-- Botón para Juego 2 -->
+                <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" class="game-button" target="_blank">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="Counter-Strike">
+                    <span>Counter-Strike</span>
+                </a>
+                <!-- Botón para Juego 3 -->
+                <a href="https://www.leagueoflegends.com/" class="game-button" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiV_Y7kR7WDOEHBDXQxdbqqDnGluVJLY7S8g&s" alt="League of Legends">
+                    <span>League of Legends</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="video-container">
+            <h2>Cómo Jugar league of legends</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LjLKNGQK0Tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="video-container">
+            <h2>Cómo Jugar Counter Strike 2</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yndrGYzkyWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="video-container">
+            <h2>Cómo Jugar Blox.io</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1rmiHE2mfBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Juegos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

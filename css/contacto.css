@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(16, 162, 128); /* Fondo verde */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+/* Estilos básicos para el navbar */
+.navbar {
+    background-color: #054d61cc; /* Fondo con un color translúcido */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: center;
+    gap: 1rem; /* Espaciado entre enlaces */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto moderno */
+    border-radius: 10px; /* Bordes suaves */
+}
+
+/* Estilo para los enlaces dentro del navbar */
+.nav-link {
+    text-decoration: none; /* Elimina el subrayado */
+    color: white;
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes suaves */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de transición */
+}
+
+/* Hover en los enlaces */
+.nav-link:hover {
+    background-color: #196493; /* Color de fondo al pasar el ratón */
+    color: #f9f9f9; /* Color del texto al pasar el ratón */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        align-items: stretch; /* Ocupa todo el ancho */
+    }
+    .nav-link {
+        text-align: center; /* Centra los enlaces */
+        padding: 1rem 0;
+    }
+}
+
+/* Estilo del botón de juego */
+.game-button {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #7289da;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.game-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.game-button span {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.game-button:hover {
+    background-color: #7289da;
+    color: white;
+}
+
+/* Estilo para la sección de contenido */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo para centrar el texto "Unete aqui" */
+div {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 212, 149);
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/* Estilo adicional para centrar el texto del pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #333;
+}
