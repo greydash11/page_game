@@ -160,3 +160,43 @@ footer {
     border-color: #ff0000; /* Cambia el borde a azul al pasar el mouse */
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
 }
+.game-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    max-height: calc(6 * 250px + 5 * 20px); /* Ajustado para reflejar el tamaño uniforme de las imágenes */
+    overflow-y: auto; /* Habilitar desplazamiento si excede 6 filas */
+}
+
+.game-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background-color: #a9a9a9cc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-button img {
+    width: 100%; /* Adaptable al ancho del contenedor */
+    height: 150px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen mantenga proporciones sin distorsionarse */
+    border-radius: 10px;
+}
+
+.game-button span {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.game-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
